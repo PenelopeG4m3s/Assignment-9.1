@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Tester</title>
+</head>
+<body>
+    <header>
+        <h1>Palindrome Tester</h1>
+    </header>
+    <main>
+        <!-- make it so the form will not submit - since this is a client-side test-->
+        <form onsubmit="return false;">
+            <label for="txtInput">Word to test: </label>
+            <input type="text" id="txtInput" required>
+
+            <button onclick="testPalin();">Test Word</button>
+        </form>
+
+        <div id="divResult"></div>
+    </main>
+
+    <!-- TODO: move to an external javascript file-->
+    <script src="palindrome_code.js">
+        
+    </script>
+
+</body>
+</html>
